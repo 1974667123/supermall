@@ -1,19 +1,16 @@
 {
   "compilerOptions": {
-    "target": "es5",
-    "module": "esnext",
+    "target": "ES6",
+    "allowSyntheticDefaultImports": true,
     "baseUrl": "./",
-    "moduleResolution": "node",
     "paths": {
-      "@/*": [
-        "src/*"
-      ]
-    },
-    "lib": [
-      "esnext",
-      "dom",
-      "dom.iterable",
-      "scripthost"
-    ]
-  }
+      "@/*": ["src/*"],
+      "components/*": ["src/components/*"],
+      "components/common*": ["src/components/commom/*"],
+      "assets/*": ["src/assets/*"],
+      "views/*": ["src/views/*"],
+      "common/*": ["src/common/*"]
+    }
+  },
+  "exclude": ["node_modules"]
 }
